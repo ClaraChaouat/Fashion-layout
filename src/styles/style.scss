@@ -1,0 +1,167 @@
+@import "settings";
+@import "responsive.scss";
+@import "minireset.scss";
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+.wrapper {
+  min-height: 100%;
+  min-width: 80vw;
+  display: flex;
+  border: solid;
+}
+
+.right-side {
+  background-color: $background-color-main;
+  width: 75%;
+}
+
+.nav-list {
+  display: flex;
+  font-family: $font-secondary-title;
+  font-size: 1rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 1rem 0;
+  align-items: center;
+}
+
+.nav-item {
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: wrap;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  padding: 0 2.2rem;
+  flex-wrap: wrap;
+  color: black;
+
+  h1 {
+    font-family: $font-secondary-title;
+    font-size: 2.12rem;
+    margin-top: 15%;
+  }
+
+  h2 {
+    font-family: $font-main-title;
+    font-size: 8.12rem;
+  }
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1.6rem 0;
+  }
+
+  li {
+    margin-left: 2rem;
+    display: flex;
+  }
+
+  img {
+    width: 9.3rem;
+    height: 9.3rem;
+    object-fit: cover;
+    filter: grayscale(90%);
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+  }
+}
+
+img.arrow {
+  width: 40px;
+  height: 40px;
+  margin: 0 1.2rem;
+  cursor: pointer;
+  -webkit-box-shadow: 0 8px 6px -6px transparent;
+  -moz-box-shadow: 0 8px 6px -6px transparent;
+  box-shadow: 0 8px 6px -6px transparent;
+}
+
+.shop-now-btn {
+  background-color: black;
+  font-size: 16px;
+  color: $background-color-aside;
+  padding: 0.6rem 2.2rem;
+  margin-top: 2%;
+  border: 1px solid $background-color-aside;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: $background-color-aside;
+  width: 25%;
+
+  h1 {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: $font-left-side-title;
+    font-size: 1.25rem;
+    padding: 1rem 2rem;
+  }
+
+  .left-side-bottom {
+    display: flex;
+    height: 100vh;
+  }
+
+  .border {
+    border-top: 8px solid black;
+    border-left: 8px solid black;
+    width: 100%;
+  }
+
+  ul {
+    display: flex;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    font-family: $font-secondary-title;
+    font-size: 0.8rem;
+    width: min-content;
+    margin: auto 0;
+    padding: 1rem 2rem;
+  }
+
+  li {
+    margin-bottom: 4rem;
+    cursor: pointer;
+  }
+
+  a {
+    margin-right: 4rem;
+  }
+}
+
+// @media #{$tablet-version} {
+//     body {
+//         background-color:blue
+//     }
+// }
