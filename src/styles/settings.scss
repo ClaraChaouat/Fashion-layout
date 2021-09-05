@@ -1,38 +1,33 @@
 @import "minireset";
 
-
+@font-face {
+  font-family: "playfair-display-regular";
+  src: url("../fonts/playfair-display-regular.otf") format("truetype");
+}
 
 @font-face {
-    font-family: 'playfair-display-regular';
-    src: url("../fonts/playfair-display-regular.otf") format("truetype");
- };
+  font-family: "baskerville-semi-bold";
+  src: url("../fonts/baskerville-semi-bold.ttf") format("truetype");
+}
 
 @font-face {
-    font-family: 'baskerville-semi-bold';
-    src: url("../fonts/baskerville-semi-bold.ttf") format("truetype");
- }
+  font-family: "baskerville-bold";
+  src: url("../fonts/baskerville-bold.otf") format("truetype");
+}
 
+@font-face {
+  font-family: "cocogothic-bold";
+  src: url("../fonts/cocogothic-bold.ttf") format("truetype");
+}
 
- @font-face {
-    font-family: 'baskerville-bold';
-    src: url("../fonts/baskerville-bold.otf") format("truetype");
- };
-
- @font-face {
-    font-family: 'cocogothic-bold';
-    src: url("../fonts/cocogothic-bold.ttf") format("truetype");
- };
-
-// Colors variables 
+// Colors variables
 $font-color: black;
-$background-color-main:#FFECDA;
-$background-color-secondary:#FFFBFB;
-$background-color-aside:#FFFFFF;
+$background-color-main: #ffecda;
+$background-color-secondary: #fffbfb;
+$background-color-aside: #ffffff;
 
 // Fonts varibales
- $font-main-title: 'playfair-display-regular', sans-serif;
- $font-secondary-title: 'baskerville-semi-bold', sans-serif;
- $font-button: 'baskerville-bold', sans-serif;
- $font-left-side-title: 'cocogothic-bold', sans-serif;
-
-
+$font-main-title: "playfair-display-regular", sans-serif;
+$font-secondary-title: "baskerville-semi-bold", sans-serif;
+$font-button: "baskerville-bold", sans-serif;
+$font-left-side-title: "cocogothic-bold", sans-serif;

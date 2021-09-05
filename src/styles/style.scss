@@ -20,6 +20,24 @@ body {
   min-width: 80vw;
   display: flex;
   border: solid;
+  text-transform: uppercase;
+}
+
+.footer {
+  display: none;
+}
+
+.main-model-img-container {
+  position: relative;
+
+  img {
+    position: absolute;
+    transform: translate(85%, 30%);
+    filter: grayscale(100%);
+    z-index: 10000;
+    width: 100%;
+    height: auto;
+  }
 }
 
 .right-side {
@@ -30,7 +48,7 @@ body {
 .nav-list {
   display: flex;
   font-family: $font-secondary-title;
-  font-size: 1rem;
+  font-size: 1.4vw;
   flex-wrap: wrap;
   justify-content: flex-end;
   padding: 1rem 0;
@@ -59,20 +77,22 @@ body {
 
   h1 {
     font-family: $font-secondary-title;
-    font-size: 2.12rem;
+    font-size: 4vw;
     margin-top: 15%;
+    text-transform: uppercase;
   }
 
   h2 {
     font-family: $font-main-title;
-    font-size: 8.12rem;
+    font-size: 12vw;
   }
 
   ul {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 1.6rem 0;
+    padding: 1.2rem 0;
+    flex-wrap: wrap;
   }
 
   li {
@@ -81,8 +101,8 @@ body {
   }
 
   img {
-    width: 9.3rem;
-    height: 9.3rem;
+    width: 10vw;
+    height: 10vw;
     object-fit: cover;
     filter: grayscale(90%);
     -webkit-box-shadow: 0 8px 6px -6px black;
@@ -92,8 +112,8 @@ body {
 }
 
 img.arrow {
-  width: 40px;
-  height: 40px;
+  width: 3vw;
+  height: 3vw;
   margin: 0 1.2rem;
   cursor: pointer;
   -webkit-box-shadow: 0 8px 6px -6px transparent;
@@ -103,13 +123,16 @@ img.arrow {
 
 .shop-now-btn {
   background-color: black;
-  font-size: 16px;
   color: $background-color-aside;
-  padding: 0.6rem 2.2rem;
-  margin-top: 2%;
+  font-size: 1vw;
+  padding: 0.6rem 1.2rem;
+  vertical-align: middle;
+  width: 22%;
+  height: 6%;
   border: 1px solid $background-color-aside;
   border-radius: 4px;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .left-side {
@@ -123,8 +146,9 @@ img.arrow {
     display: flex;
     flex-wrap: wrap;
     font-family: $font-left-side-title;
-    font-size: 1.25rem;
+    font-size: 1.6vw;
     padding: 1rem 2rem;
+    text-transform: uppercase;
   }
 
   .left-side-bottom {
@@ -145,6 +169,7 @@ img.arrow {
     transform: rotate(180deg);
     font-family: $font-secondary-title;
     font-size: 0.8rem;
+    text-transform: uppercase;
     width: min-content;
     margin: auto 0;
     padding: 1rem 2rem;
@@ -160,8 +185,108 @@ img.arrow {
   }
 }
 
-// @media #{$tablet-version} {
-//     body {
-//         background-color:blue
-//     }
-// }
+@media #{$mobile-version} {
+  html,
+  body {
+    height: 100%;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+  .main-model-img-container {
+    position: relative;
+
+    img {
+      position: absolute;
+      transform: translate(56%, 68%);
+      filter: grayscale(100%);
+      z-index: 10000;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .main {
+    height: 100vh;
+  }
+
+  .main-content {
+    align-items: center;
+    margin-top: 15%;
+    ul {
+      padding: 2.8rem 0;
+      width: 100%;
+    }
+
+    li {
+      margin-left: 1rem;
+    }
+
+    h1 {
+      margin-bottom: 10%;
+      font-size: 5vw;
+    }
+
+    h2 {
+      margin-bottom: 10%;
+    }
+
+    img {
+      width: 15vw;
+      height: 15vw;
+    }
+  }
+
+  img.arrow {
+    width: 4vw;
+    height: 4vw;
+    margin: 0 1rem;
+  }
+
+  .nav-list {
+    font-size: 0.8rem;
+  }
+
+  .nav-item {
+    padding-right: 0.2rem;
+  }
+
+  .shop-now-btn {
+    width: 30%;
+    height: 4%;
+    padding: 0;
+    font-size: 0.6rem;
+  }
+
+  .left-side {
+    display: none;
+  }
+
+  .right-side {
+    width: 100%;
+  }
+
+  .footer {
+    display: flex;
+    height: 10vh;
+
+    ul {
+      display: flex;
+      justify-content: center;
+      text-transform: uppercase;
+      border-top: 8px solid black;
+      border-bottom: 1px solid black;
+      width: 100%;
+      align-items: center;
+      font-family: $font-secondary-title;
+    }
+
+    li {
+      display: flex;
+      cursor: pointer;
+    }
+  }
+}
