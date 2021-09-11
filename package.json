@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build src/index.html --no-minify "
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,8 @@
   },
   "homepage": "https://github.com/ClaraChaouat/Fashion-layout#readme",
   "devDependencies": {
+    "cssnano": "^5.0.8",
+    "postcss": "^8.2.15",
     "sass": "^1.38.2"
   }
 }
