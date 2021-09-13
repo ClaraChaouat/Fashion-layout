@@ -162,7 +162,6 @@ body {
 
 .nav-item {
   margin-right: 2rem;
-  cursor: pointer;
 }
 
 .main {
@@ -212,8 +211,6 @@ a {
   height: 10vw;
   object-fit: cover;
   filter: grayscale(90%);
-  -webkit-box-shadow: 0 8px 6px -6px black;
-  -moz-box-shadow: 0 8px 6px -6px black;
   box-shadow: 0 8px 6px -6px black;
 }
 
@@ -221,13 +218,12 @@ img.arrow {
   width: 3vw;
   height: 3vw;
   margin: 0 1.2rem;
+  color: black;
   cursor: pointer;
-  -webkit-box-shadow: 0 8px 6px -6px transparent;
-  -moz-box-shadow: 0 8px 6px -6px transparent;
   box-shadow: 0 8px 6px -6px transparent;
 }
 
-.shop-now-btn {
+.btn-primary {
   background-color: black;
   color: #ffffff;
   font-size: 1vw;
@@ -300,20 +296,23 @@ body {
     min-height: 100%;
   }
 
-  .main-model-img-container {
-    position: relative;
-  }
-  .main-model-img-container img {
-    position: absolute;
-    transform: translate(56%, 68%);
-    filter: grayscale(100%);
-    z-index: 10000;
-    width: 100%;
-    height: auto;
-  }
-
   .main {
     height: 100vh;
+    position: relative;
+  }
+
+  .main-model-img-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .main-model-img-container img {
+    filter: grayscale(100%);
+    width: 75vw;
+    height: auto;
+    max-width: none;
+    transform: translate(0, 0);
+    opacity: 0.3;
   }
 
   .main-content {
@@ -337,8 +336,8 @@ body {
     margin-bottom: 10%;
   }
   .main-content img {
-    width: 15vw;
-    height: 15vw;
+    width: 20vw;
+    height: 20vw;
   }
 
   img.arrow {
@@ -355,7 +354,7 @@ body {
     padding-right: 0.2rem;
   }
 
-  .shop-now-btn {
+  .btn-primary {
     width: 30%;
     height: 4%;
     padding: 0;
