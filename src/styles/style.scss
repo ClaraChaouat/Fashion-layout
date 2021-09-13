@@ -27,22 +27,24 @@ body {
   display: none;
 }
 
-.main-model-img-container {
-  position: relative;
-
-  img {
-    position: absolute;
-    transform: translate(85%, 30%);
-    filter: grayscale(100%);
-    z-index: 10000;
-    width: 100%;
-    height: auto;
-  }
-}
-
 .right-side {
   background-color: $background-color-main;
   width: 75%;
+  position: relative;
+}
+
+.main-model-img-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  img {
+    transform: translate(-40%, 8%);
+    filter: grayscale(100%);
+    width: 30vw;
+    max-width: none;
+    height: auto;
+  }
 }
 
 .nav-list {
@@ -66,13 +68,19 @@ body {
   flex-flow: wrap;
 }
 
+a {
+  text-decoration: none;
+  font-family: $font-secondary-title;
+  font-size: 1.4vw;
+  color: $font-color;
+}
+
 .main-content {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   flex-wrap: wrap;
   padding: 0 2.2rem;
-  flex-wrap: wrap;
   color: black;
 
   h1 {
@@ -122,7 +130,7 @@ img.arrow {
 }
 
 .shop-now-btn {
-  background-color: black;
+  background-color: $font-color;
   color: $background-color-aside;
   font-size: 1vw;
   padding: 0.6rem 1.2rem;
@@ -153,7 +161,7 @@ img.arrow {
 
   .left-side-bottom {
     display: flex;
-    height: 100vh;
+    flex-grow: 1;
   }
 
   .border {
@@ -167,8 +175,6 @@ img.arrow {
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: rotate(180deg);
-    font-family: $font-secondary-title;
-    font-size: 0.8rem;
     text-transform: uppercase;
     width: min-content;
     margin: auto 0;
@@ -176,12 +182,17 @@ img.arrow {
   }
 
   li {
+    list-style-type: none;
     margin-bottom: 4rem;
     cursor: pointer;
   }
 
   a {
     margin-right: 4rem;
+    color: $font-color;
+    font-family: $font-secondary-title;
+    font-size: 0.8rem;
+    text-decoration: none;
   }
 }
 
@@ -215,10 +226,12 @@ img.arrow {
 
   .main-content {
     align-items: center;
+    width: 100%;
     margin-top: 15%;
     ul {
       padding: 2.8rem 0;
       width: 100%;
+      justify-content: center;
     }
 
     li {
@@ -281,12 +294,32 @@ img.arrow {
       border-bottom: 1px solid black;
       width: 100%;
       align-items: center;
+      font-size: 0.8rem;
       font-family: $font-secondary-title;
     }
 
     li {
       display: flex;
       cursor: pointer;
+      padding-right: 0.5rem;
+    }
+  }
+}
+
+@media #{$iphoneSE-version} {
+  .main-content {
+    ul {
+      justify-content: center;
+    }
+  }
+
+  .footer {
+    ul {
+      font-size: 0.8rem;
+    }
+
+    li {
+      padding-right: 0.5rem;
     }
   }
 }
