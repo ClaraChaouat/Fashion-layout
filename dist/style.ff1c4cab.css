@@ -229,6 +229,7 @@ img.arrow {
   font-size: 1vw;
   padding: 0.6rem 1.2rem;
   vertical-align: middle;
+  font-family: "baskerville-bold", sans-serif;
   width: 22%;
   height: 6%;
   border: 1px solid #ffffff;
@@ -358,6 +359,7 @@ body {
     width: 30%;
     height: 4%;
     padding: 0;
+    font-family: "baskerville-bold", sans-serif;
     font-size: 0.6rem;
   }
 

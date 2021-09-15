@@ -21,13 +21,12 @@
 }
 
 // Colors variables
-$font-color: black;
-$background-color-main: #ffecda;
-$background-color-secondary: #fffbfb;
-$background-color-aside: #ffffff;
+$font-color-text: black;
+$background-color-right-side: #ffecda;
+$background-color-left-side: #ffffff;
 
 // Fonts varibales
-$font-main-title: "playfair-display-regular", sans-serif;
-$font-secondary-title: "baskerville-semi-bold", sans-serif;
-$font-button: "baskerville-bold", sans-serif;
-$font-left-side-title: "cocogothic-bold", sans-serif;
+$font-main: "playfair-display-regular", sans-serif;
+$font-secondary: "baskerville-semi-bold", sans-serif;
+$font-tertiary: "baskerville-bold", sans-serif;
+$font-quaternary: "cocogothic-bold", sans-serif;
