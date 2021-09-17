@@ -163,6 +163,9 @@ body {
 .nav-item {
   margin-right: 2rem;
 }
+.nav-item .nav-img {
+  width: 2.5vw;
+}
 
 .main {
   display: flex;
@@ -195,7 +198,7 @@ a {
   font-family: "playfair-display-regular", sans-serif;
   font-size: 12vw;
 }
-.main-content ul {
+.main-content-carousel {
   display: flex;
   justify-content: flex-end;
   align-items: center;

@@ -59,6 +59,11 @@ body {
 
 .nav-item {
   margin-right: 2rem;
+
+  
+  .nav-img {
+    width:2.5vw;
+  }
 }
 
 .main {
@@ -94,7 +99,7 @@ a {
     font-size: 12vw;
   }
 
-  ul {
+  &-carousel {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -120,7 +125,7 @@ img.arrow {
   width: 3vw;
   height: 3vw;
   margin: 0 1.2rem;
-  color:$font-color-text;
+  color: $font-color-text;
   cursor: pointer;
   box-shadow: 0 8px 6px -6px transparent;
 }
@@ -211,23 +216,18 @@ img.arrow {
   }
   .main-model-img-container {
     position: absolute;
-    top:0;
-    left:0;
-  
-    
+    top: 0;
+    left: 0;
 
     img {
-    
       filter: grayscale(100%);
       width: 75vw;
       height: auto;
       max-width: none;
-      transform: translate(0,0);
+      transform: translate(0, 0);
       opacity: 0.3;
     }
   }
-
- 
 
   .main-content {
     align-items: center;
