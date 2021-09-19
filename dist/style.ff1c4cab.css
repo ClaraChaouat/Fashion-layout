@@ -216,9 +216,10 @@ body {
   filter: grayscale(90%);
   box-shadow: 0 8px 6px -6px black;
   cursor: pointer;
+  transition: transform 250ms;
 }
 .main-content-carousel-img:hover {
-  transform: translateY(10%);
+  transform: translateY(-10%);
 }
 
 img.arrow {
