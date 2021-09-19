@@ -38,7 +38,7 @@ body {
   top: 0;
   left: 0;
 
-  img {
+  &-img {
     transform: translate(-40%, 8%);
     filter: grayscale(100%);
     width: 30vw;
@@ -60,9 +60,8 @@ body {
 .nav-item {
   margin-right: 2rem;
 
-  
-  .nav-img {
-    width:2.5vw;
+  &-img {
+    width: 2.5vw;
   }
 }
 
@@ -72,7 +71,7 @@ body {
   flex-flow: wrap;
 }
 
-a {
+.link {
   text-decoration: none;
   font-family: $font-secondary;
   font-size: 1.4vw;
@@ -87,14 +86,14 @@ a {
   padding: 0 2.2rem;
   color: black;
 
-  h1 {
+  &-primary-title {
     font-family: $font-secondary;
     font-size: 4vw;
     margin-top: 15%;
     text-transform: uppercase;
   }
 
-  h2 {
+  &-secondary-title {
     font-family: $font-main;
     font-size: 12vw;
   }
@@ -105,19 +104,24 @@ a {
     align-items: center;
     padding: 1.2rem 0;
     flex-wrap: wrap;
-  }
 
-  li {
-    margin-left: 2rem;
-    display: flex;
-  }
+    &-item {
+      margin-left: 2rem;
+      display: flex;
+    }
 
-  img {
-    width: 10vw;
-    height: 10vw;
-    object-fit: cover;
-    filter: grayscale(90%);
-    box-shadow: 0 8px 6px -6px black;
+    &-img {
+      width: 10vw;
+      height: 10vw;
+      object-fit: cover;
+      filter: grayscale(90%);
+      box-shadow: 0 8px 6px -6px black;
+      cursor: pointer;
+
+      &:hover {
+        transform: translateY(10%);
+      }
+    }
   }
 }
 
@@ -152,7 +156,7 @@ img.arrow {
   background-color: $background-color-left-side;
   width: 25%;
 
-  h1 {
+  &-title {
     display: flex;
     flex-wrap: wrap;
     font-family: $font-quaternary;
@@ -172,7 +176,7 @@ img.arrow {
     width: 100%;
   }
 
-  ul {
+  &-navbar {
     display: flex;
     writing-mode: vertical-rl;
     text-orientation: mixed;
@@ -183,7 +187,7 @@ img.arrow {
     padding: 1rem 2rem;
   }
 
-  li {
+  &-item {
     list-style-type: none;
     margin-bottom: 4rem;
     cursor: pointer;
@@ -219,7 +223,7 @@ img.arrow {
     top: 0;
     left: 0;
 
-    img {
+    &-img {
       filter: grayscale(100%);
       width: 75vw;
       height: auto;
@@ -233,28 +237,29 @@ img.arrow {
     align-items: center;
     width: 100%;
     margin-top: 15%;
-    ul {
+
+    &-carousel {
       padding: 2.8rem 0;
       width: 100%;
       justify-content: center;
+
+      &-item {
+        margin-left: 1rem;
+      }
+
+      &-img {
+        width: 20vw;
+        height: 20vw;
+      }
     }
 
-    li {
-      margin-left: 1rem;
-    }
-
-    h1 {
+    &-primary-title {
       margin-bottom: 10%;
       font-size: 5vw;
     }
 
-    h2 {
+    &-secondary-title {
       margin-bottom: 10%;
-    }
-
-    img {
-      width: 20vw;
-      height: 20vw;
     }
   }
 
@@ -270,6 +275,17 @@ img.arrow {
 
   .nav-item {
     padding-right: 0.2rem;
+
+    &-img {
+      width:4.5vw;
+    }
+
+  
+  }
+
+  .link {
+    font-size: 3.4vw;
+  
   }
 
   .btn-primary {
@@ -292,7 +308,7 @@ img.arrow {
     display: flex;
     height: 10vh;
 
-    ul {
+    &-navbar {
       display: flex;
       justify-content: center;
       text-transform: uppercase;
@@ -304,7 +320,7 @@ img.arrow {
       font-family: $font-secondary;
     }
 
-    li {
+    &-item {
       display: flex;
       cursor: pointer;
       padding-right: 0.5rem;
