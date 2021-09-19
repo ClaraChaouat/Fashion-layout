@@ -163,6 +163,7 @@ body {
 .nav-item {
   margin-right: 2rem;
 }
+
 .nav-item-img {
   width: 2.5vw;
 }
@@ -337,16 +338,17 @@ body {
   .main-content-carousel-item {
     margin-left: 1rem;
   }
-  .main-content-carousel-img {
-    width: 20vw;
-    height: 20vw;
-  }
   .main-content-primary-title {
     margin-bottom: 10%;
     font-size: 5vw;
   }
   .main-content-secondary-title {
     margin-bottom: 10%;
+  }
+
+  .nav-item-img {
+    width: 20vw;
+    height: 20vw;
   }
 
   img.arrow {

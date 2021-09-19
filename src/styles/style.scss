@@ -60,9 +60,11 @@ body {
 .nav-item {
   margin-right: 2rem;
 
-  &-img {
-    width: 2.5vw;
-  }
+ 
+}
+.nav-item-img {
+  width: 2.5vw;
+  // background-color:pink;
 }
 
 .main {
@@ -248,10 +250,6 @@ img.arrow {
         margin-left: 1rem;
       }
 
-      &-img {
-        width: 20vw;
-        height: 20vw;
-      }
     }
 
     &-primary-title {
@@ -263,6 +261,13 @@ img.arrow {
       margin-bottom: 10%;
     }
   }
+
+  .nav-item-img {
+    width: 20vw;
+    height: 20vw;
+
+  }
+
 
   img.arrow {
     width: 4vw;
