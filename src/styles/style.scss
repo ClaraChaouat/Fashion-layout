@@ -20,7 +20,6 @@ body {
   min-width: 80vw;
   display: flex;
   text-transform: uppercase;
-  background-color: red;
 }
 
 .footer {
@@ -31,7 +30,6 @@ body {
   background-color: $background-color-right-side;
   width: 75%;
   position: relative;
-  background-color: pink;
 }
 
 .main-model-img-container {
@@ -42,7 +40,7 @@ body {
   &-img {
     transform: translate(-40%, 8%);
     filter: grayscale(100%);
-    width: 30vw;
+    width: 29vw;
     max-width: none;
     height: auto;
   }
@@ -65,7 +63,6 @@ body {
 }
 .nav-item-img {
   width: 2.5vw;
-  // background-color:pink;
 }
 
 .main {
@@ -88,6 +85,7 @@ body {
   flex-wrap: wrap;
   padding: 0 2.2rem;
   color: black;
+  height:100%;
 
   &-primary-title {
     font-family: $font-secondary;
@@ -107,7 +105,6 @@ body {
     align-items: center;
     padding: 1rem 0;
     flex-wrap: wrap;
-    background-color: pink;
 
     &-item {
       margin-left: 2rem;

@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../../../../../../opt/homebrew/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+})({"../../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -149,7 +149,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"../../../../../../opt/homebrew/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"../../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -184,12 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../../../../opt/homebrew/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"styles/style.scss":[function(require,module,exports) {
+},{"./bundle-url":"../../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"styles/style.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../fonts/playfair-display-regular.otf":[["playfair-display-regular.269b7716.otf","fonts/playfair-display-regular.otf"],"fonts/playfair-display-regular.otf"],"./../fonts/baskerville-semi-bold.ttf":[["baskerville-semi-bold.a3d2fd5f.ttf","fonts/baskerville-semi-bold.ttf"],"fonts/baskerville-semi-bold.ttf"],"./../fonts/baskerville-bold.otf":[["baskerville-bold.22660924.otf","fonts/baskerville-bold.otf"],"fonts/baskerville-bold.otf"],"./../fonts/cocogothic-bold.ttf":[["cocogothic-bold.df279b1e.ttf","fonts/cocogothic-bold.ttf"],"fonts/cocogothic-bold.ttf"],"_css_loader":"../../../../../../opt/homebrew/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../../opt/homebrew/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./..\\fonts\\playfair-display-regular.otf":[["playfair-display-regular.269b7716.otf","fonts/playfair-display-regular.otf"],"fonts/playfair-display-regular.otf"],"./..\\fonts\\baskerville-semi-bold.ttf":[["baskerville-semi-bold.a3d2fd5f.ttf","fonts/baskerville-semi-bold.ttf"],"fonts/baskerville-semi-bold.ttf"],"./..\\fonts\\baskerville-bold.otf":[["baskerville-bold.22660924.otf","fonts/baskerville-bold.otf"],"fonts/baskerville-bold.otf"],"./..\\fonts\\cocogothic-bold.ttf":[["cocogothic-bold.df279b1e.ttf","fonts/cocogothic-bold.ttf"],"fonts/cocogothic-bold.ttf"],"_css_loader":"../../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63008" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52356" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -393,5 +393,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../../../opt/homebrew/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+},{}]},{},["../../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
 //# sourceMappingURL=/style.ff1c4cab.js.map
