@@ -1,0 +1,32 @@
+@import "minireset";
+
+@font-face {
+  font-family: "playfair-display-regular";
+  src: url("../fonts/playfair-display-regular.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "baskerville-semi-bold";
+  src: url("../fonts/baskerville-semi-bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "baskerville-bold";
+  src: url("../fonts/baskerville-bold.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "cocogothic-bold";
+  src: url("../fonts/cocogothic-bold.ttf") format("truetype");
+}
+
+// Colors variables
+$font-color-text: black;
+$background-color-right-side: #ffecda;
+$background-color-left-side: #ffffff;
+
+// Fonts varibales
+$font-main: "playfair-display-regular", sans-serif;
+$font-secondary: "baskerville-semi-bold", sans-serif;
+$font-tertiary: "baskerville-bold", sans-serif;
+$font-quaternary: "cocogothic-bold", sans-serif;

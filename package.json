@@ -1,0 +1,27 @@
+{
+  "name": "fashion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "parcel src/index.html && parcel watch src/index.html",
+    "build": "parcel build src/index.html --no-minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClaraChaouat/Fashion-layout.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ClaraChaouat/Fashion-layout/issues"
+  },
+  "homepage": "https://github.com/ClaraChaouat/Fashion-layout#readme",
+  "devDependencies": {
+    "cssnano": "^5.0.8",
+    "postcss": "^8.2.15",
+    "sass": "^1.39.2"
+  }
+}
